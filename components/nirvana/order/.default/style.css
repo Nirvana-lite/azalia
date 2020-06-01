@@ -1,0 +1,447 @@
+/* Оформление заказа */
+.basket-top{
+    display: flex;
+    margin-bottom: 50px;
+}
+.basket-top__title{
+    font-size: 32px;
+    font-family: 'FuturaHeavy';
+    color: #1d1d1d;
+    margin-right: 90px;
+}
+.basket-top__hidden{
+    opacity: .2;
+}
+.order{
+    background: #fafbfc;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.order-grid{
+    grid-template-columns: 45% 52%;
+    grid-column-gap: 3%;
+}
+
+
+.grid-wrap{
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+
+.order__form{
+    padding: 65px 50px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+}
+.order__form_title{
+    font-size: 22px;
+    font-family: 'FuturaDemiC';
+    color: #1d1d1d;
+    margin-bottom: 30px;
+}
+.order__form_text{
+    font-size: 20px;
+    font-family: 'FuturaBook';
+    color: #1d1d1d;
+    margin-bottom: 35px;
+}
+.order__form_label{
+    width: 100%;
+    margin-right: 24px;
+    margin-bottom: 25px;
+}
+.order__form_span,
+.order__form_span__text{
+    font-size: 18px;
+    font-family: 'FuturaLight';
+    color: #1d1d1d;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+}
+.order__form_span:after{
+    position: absolute;
+    content: '*';
+    color: #ff0000;
+    right: -10px;
+    top: 0;
+    width: 7px;
+    height: 7px;
+}
+.order__form_input{
+    border: 1px solid #d8d8d8;
+    padding: 10px;
+    width: 100%;
+}
+.order__form_label:nth-child(even){
+    margin-right: 0;
+}
+.order__form_textarea{
+    height: 154px;
+    border: 1px solid #d8d8d8;
+    width: 100%;
+}
+
+
+.order__form_wrap{
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-bottom: 40px;
+}
+.order__radio{
+    width: 100%;
+    padding: 19px;
+    border: 1px solid #d8d8d8;
+    position: relative;
+}
+.order__radio.active{
+    border: 1px solid #ffce00;
+}
+
+
+/* Стилизация чекетов */
+
+.radio input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 7px;
+}
+.radio__text {
+    position: relative;
+    padding: 0 35px 0 0;
+    cursor: pointer;
+}
+.radio__text:before {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    position: absolute;
+    right: 19px;
+    top: 19px;
+}
+.radio__text:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #9FD468;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+    opacity: 0;
+    transition: .2s;
+}
+.radio input:checked + .radio__text:after {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    position: absolute;
+    right: 19px;
+    top: 19px;
+}
+.radio input:checked + .radio__text:before {
+    content:'\f00c';
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #fff;
+    background: #fecd6c;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fecd6c;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.order__form_wrap .label{
+    font-size: 18px;
+    font-family: 'FuturaDemiC';
+    color: #1d1d1d;
+}
+.order__label_span{
+    font-size: 16px;
+    font-family: 'FuturaLight';
+    color: #1d1d1d;
+    display: block;
+    padding-top: 10px;
+}
+
+
+
+/* Правая часть */
+.order__right{
+    padding: 65px 50px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    align-self: baseline;
+}
+.order__right_title{
+    font-size: 32px;
+    font-family: 'FuturaHeavy';
+    color: #1d1d1d;
+    position: relative;
+}
+.order__right_title:after{
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 2px;
+    background: #ffce00;
+    right: 0;
+    top: 20px;
+}
+.order__right_text{
+    font-size: 18px;
+    font-family: 'FuturaBook';
+    color: #cdcdcd;
+}
+.order__right_product{
+    margin-bottom: 30px;
+}
+.order__right_product__line{
+    grid-template-columns: 5% 60% 15% 20%;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.order__right_product__number{
+    font-size: 16px;
+    font-family: 'FuturaBook';
+    color: #a8a8a8;
+}
+.order__right_product__name{
+    font-size: 18px;
+    font-family: 'FuturaBook';
+    color: #1d1d1d;
+}
+.order__right_product__count{
+    font-size: 18px;
+    font-family: 'FuturaMedium';
+    color: #1d1d1d;
+    text-align: center;
+}
+.order__right_product__price{
+    font-size: 22px;
+    font-family: 'FuturaBold';
+    color: #1d1d1d;
+    text-align: right;
+}
+
+.order__right_flex{
+    margin-bottom: 30px;
+}
+.order__right_border{
+    position: relative;
+}
+.order__right_border:before{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px dashed #e5e5e5;
+    bottom: 4px;
+    left: 0;
+}
+.order__right_small{
+    font-size: 20px;
+    font-family: 'FuturaMedium';
+    color: #1d1d1d;
+    background: #fff;
+    position: relative;
+}
+.order__right_value{
+    font-size: 22px;
+    font-family: 'FuturaBold';
+    color: #1d1d1d;
+    background: #fff;
+    position: relative;
+}
+
+.order__right_med{
+    font-size: 32px;
+    font-family: 'FuturaHeavy';
+    color: #1d1d1d;
+}
+.order__right_med_value{
+    font-size: 32px;
+    font-family: 'FuturaBold';
+    color: #1d1d1d;
+}
+
+.order__right_product__oform{
+    text-align: right;
+}
+.order__right_product__end{
+    font-size: 20px;
+    font-family: 'FuturaMedium';
+    color: #1d1d1d;
+    display: inline-block;
+    background: #fecd6c;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-top: 75px;
+}
+
+@media screen and (max-width: 1650px){
+
+    .order__radio {
+        height: auto;
+    }
+    span.order__radio_title {
+        display: block;
+        width: 80%;
+    }
+    .order__right_title:after {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .grid-wrap{
+        grid-template-columns: 100%;
+    }
+    .order__form_wrap{
+        grid-template-columns: 100%;
+    }
+
+    .order__form_label{
+        margin-right: 0;
+        width: 100%;
+    }
+    .order__radio{
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .order__right_title:after {
+        width: 55%;
+    }
+
+    .order__right_product__line {
+        grid-template-columns: 5% 50% 15% 30%;
+    }
+    .order__right_med,
+    .order__right_med_value{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 991px){
+    .order-grid{
+        grid-template-columns: 100%;
+    }
+
+
+    .grid-wrap{
+        grid-template-columns: 1fr 1fr;
+    }
+    .order__form_wrap{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .order__form{
+        margin-bottom: 40px;
+    }
+
+
+
+    .order__right_product__line {
+        grid-template-columns: 5% 60% 15% 20%;
+    }
+}
+@media screen and (max-width: 768px){
+    .basket-top__hidden{
+        display: none;
+    }
+
+    .order__form_label{
+        margin-right: 0;
+        width: 100%;
+    }
+    .order__radio{
+        margin-right: 0;
+        width: 100%;
+    }
+
+
+    .order__right_product__line {
+        grid-template-columns: 5% 50% 15% 30%;
+    }
+}
+@media screen and (max-width: 575px){
+    .grid-wrap{
+        grid-template-columns: 100%;
+    }
+    .order__form_wrap{
+        grid-template-columns: 100%;
+    }
+
+
+    .order__form{
+        padding: 20px;
+    }
+    .order__right{
+        padding: 40px 20px;
+    }
+
+
+}
+@media screen and (max-width: 480px){
+    .order__right_title:after{
+        display: none;
+    }
+    .order__right_product__line {
+        display: block;
+    }
+    .order__right_product__number{
+        display: none;
+    }
+    .order__right_product__name{
+        display: block;
+        text-align: center;
+    }
+    .order__right_product__count,
+    .order__right_product__price{
+        width: 49%;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .order__right_product__count{
+        text-align: left;
+    }
+    .order__right_product__price{
+        text-align: right;
+    }
+
+    .order__right_end{
+        flex-direction: column;
+        text-align: center;
+    }
+    .order__right_med{
+        margin-bottom: 20px;
+    }
+    .order__right_product__oform{
+        text-align: center;
+    }
+    .order__right_product__end{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 320px){
+    .order__right_product__count, .order__right_product__price {
+        width: 48%;
+        display: inline-block;
+        margin-top: 20px;
+    }
+}

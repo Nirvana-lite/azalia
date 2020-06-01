@@ -1,0 +1,54 @@
+/* Город */
+.header-city{
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    position: relative;
+    padding-left: 38px;
+    grid-area: city;
+}
+.header-city:before{
+    position: absolute;
+    content: '';
+    background: url('/local/templates/shop_template/img/map.svg') no-repeat;
+    background-size: contain;
+    width: 31px;
+    height: 37px;
+    left: -1px;
+    top: 0px;
+}
+.header-city_text{
+    font-size: 14px;
+    font-family: 'FuturaBook';
+    color: #353535;
+    margin-bottom: 0;
+}
+.header-city_name{
+    font-size: 16px;
+    font-family: 'FuturaMedium';
+    color: #353535;
+    cursor: pointer;
+    position: relative;
+    transition: color .2s linear;
+}
+.header-city_name:hover{
+    color: #fecd6c;
+}
+
+.header-city_name:before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 8px;
+    right: -15px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid #fecd6c;
+}
+
+@media screen and (max-width: 1650px){
+    /* город */
+    .header-city:after {
+        right: 4%;
+    }
+}

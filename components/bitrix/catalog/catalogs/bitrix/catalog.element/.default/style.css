@@ -1,0 +1,844 @@
+.detail{
+    overflow: hidden;
+    background: #fafbfc;
+}
+.detail-grid{
+    grid-template-columns: 50% 50%;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+}
+.detail-left{
+    display: flex;
+    overflow: hidden;
+}
+.detail-left__hash{
+    padding-left: 35px;
+}
+.detail-left__hash-link{
+
+    display: block;
+    margin-top: 40px;
+}
+/*.detail-left__hash-link.active{
+
+}*/
+.detail-left__hash-img{
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border: 1px solid #dddddd;
+}
+.detail-left__hash-link.active .detail-left__hash-img{
+    border: 3px solid #f3ae12;
+}
+
+.detail-left__slider{
+    width: 666px;
+    margin-bottom: 50px;
+}
+.detail-left__slider-img{
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    padding: 50px;
+}
+.detail .owl-theme .owl-dots .owl-dot span{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #e8e8e8;
+}
+.detail .owl-theme .owl-dots .owl-dot.active span{
+    border: 4px solid #fecd6c;
+    background: #fff;
+}
+
+
+
+
+.detail-right{
+    border-left: 1px solid #e8e8e8;
+    padding: 33px 0;
+}
+.detail-right__top{
+    display: flex;
+    padding-left: 48px;
+}
+.detail-right__name{
+    font-size: 32px;
+    font-family: 'FuturaBold';
+    color: #1d1d1d;
+    width: 75%;
+    margin-top: 0;
+}
+.detail-right__star{
+    width: 25%;
+}
+
+
+.detail-right__do{
+    width: 75%;
+    padding-left: 48px;
+    padding-bottom: 40px;
+}
+.detail-right__old{
+    font-size: 28px;
+    font-family: 'FuturaLight';
+    color: #353535;
+    text-decoration: line-through;
+}
+.detail-right__grid{
+    grid-template-columns: 40% 60%;
+}
+.detail-right__do_left{
+
+}
+.detail-right__price{
+    font-size: 48px;
+    font-family: 'FuturaBold';
+    color: #1d1d1d;
+}
+.detail-right__price_p{
+    font-size: 24px;
+}
+.detail-right__discount{
+    font-size: 16px;
+    font-family: 'FuturaBook';
+    color: #1d1d1d;
+    background: #ffe9bc;
+    padding: 8px 14px;
+    display: inline-block;
+}
+
+.detail-right__do_right{
+    text-align: center;
+}
+.detail-right__add_label{
+    position: relative;
+}
+.detail-right__add_label:before{
+    position: absolute;
+    content: '';
+    left: 15px;
+    top: -3px;
+    background: url(/bitrix/templates/eshop_bootstrap_yellow/img/shopping-cart.png) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 24px;
+    height: 22px;
+    z-index: 10;
+}
+.detail-right__add{
+    font-size: 20px;
+    font-family: 'FuturaBook';
+    color: #1d1d1d;
+    border-radius: 25px;
+    padding: 16px 40px;
+    background: #fecd6c;
+    display: inline-block;
+    position: relative;
+    border: none;
+    transition: background .2s linear;
+}
+.detail-right__add:hover{
+    background: #e6ad3c;
+}
+
+form.add_form{
+    margin-bottom: 13px;
+}
+.detail-right__click{
+    font-size: 16px;
+    font-family: 'FuturaBook';
+    color: #999999;
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: color .2s linear;
+}
+.detail-right__click:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: 1px;
+    left: 0;
+    background: #d0d0d0;
+}
+.detail-right__click:hover{
+    color: #fecd6c;
+}
+
+
+.detail-right__bottom{
+    padding-top: 47px;
+    border-top: 1px solid #e8e8e8;
+    padding-left: 48px;
+}
+.detail-right__bottom_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    width: 70%;
+}
+.detail-right__bottom_line{
+    display: flex;
+    margin-bottom: 13px;
+}
+.detail-right__bottom__name{
+    font-size: 18px;
+    font-family: 'FuturaBook';
+    color: #999999;
+    width: 40%;
+}
+.detail-right__bottom__value{
+    font-size: 18px;
+    font-family: 'FuturaBook';
+    color: #191919;
+    width: 60%;
+}
+
+
+
+/* Размеры */
+.detail__size{
+
+}
+.detail__size_line{
+
+}
+
+
+/* Добавление в избранное-сравнение */
+.detail__add{
+    display: flex;
+    margin-top: 48px;
+}
+.detail_favorite{
+    position: relative;
+    padding-left: 30px;
+    font-size: 16px;
+    font-family: 'FuturaBook';
+    color: #1d1d1d;
+    cursor: pointer;
+    transition: color .33s linear;
+}
+.detail_favorite:hover{
+    color: #969696;
+}
+.detail_favorite.in_wishlist{
+    color: #fecd6c;
+}
+.detail_favorite.in_wishlist:before{
+    position: absolute;
+    content: '';
+    background: url('/bitrix/templates/eshop_bootstrap_yellow/img/favorite-hover.png') no-repeat;
+    background-size: cover;
+
+}
+.detail_compare{
+    position: relative;
+    padding-left: 30px;
+    font-size: 16px;
+    font-family: 'FuturaBook';
+    color: #1d1d1d;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: color .33s linear;
+}
+.detail_compare:hover{
+    color: #969696;
+}
+.detail_favorite:before{
+    position: absolute;
+    content: '';
+    background: url('/bitrix/templates/eshop_bootstrap_yellow/img/favorite.png') no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 20px;
+    left: -50px;
+    color: #1d1d1d;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.detail_compare:before{
+    display: none;
+}
+.detail_compare > .checkbox{
+    cursor: pointer;
+}
+.detail_compare .checkbox__text:before{
+    position: absolute;
+    content: '';
+    background: url('/bitrix/templates/eshop_bootstrap_yellow/img/compare.png') no-repeat;
+    background-size: cover;
+    width: 23px;
+    height: 19px;
+    left: 0;
+    top: 0;
+}
+.detail_compare input:focus{
+    outline: none;
+}
+.detail_compare .checkbox__text:after{
+    display: none;
+}
+.detail_compare .checkbox input:checked + .checkbox__text:after{
+    display: none;
+}
+.detail_compare .checkbox input:checked + .checkbox__text {
+    color: #fecd6c;
+}
+.detail_compare .checkbox input:checked + .checkbox__text:before {
+    position: absolute;
+    content: '';
+    background: url('/bitrix/templates/eshop_bootstrap_yellow/img/compare-hover.png') no-repeat;
+    background-size: cover;
+    width: 23px;
+    height: 19px;
+    left: 0;
+    top: 0;
+    -webkit-transition: opacity .2s linear;
+    -o-transition: opacity .2s linear;
+    transition: opacity .2s linear;
+}
+.checkbox input:focus + .checkbox__text:before{
+    box-shadow: none;
+}
+.detail_compare .checkbox input:focus + .checkbox__text:before{
+    box-shadow: none;
+}
+
+
+/* Размеры */
+.detail__size{
+    display: flex;
+    margin-top: 45px;
+}
+.detail__size_box{
+    font-size: 20px;
+    font-family: 'FuturaBook';
+    color: #999999;
+    padding-left: 30px;
+    position: relative;
+    border-right: 1px solid #e8e8e8;
+    padding-right: 15px;
+}
+.detail__size_box:last-child{
+    border-right: none;
+}
+.detail__size_box:before{
+    position: absolute;
+    content: '';
+    background-size: cover;
+}
+.detail__size_height::before{
+    background: url('/bitrix/templates/eshop_bootstrap_yellow/img/detail-arrow.png') no-repeat;
+    width: 7px;
+    height: 15px;
+    left: 10px;
+    top: 3px;
+}
+.detail__size_width::before{
+    background: url('/bitrix/templates/eshop_bootstrap_yellow/img/detail-arrow.png') no-repeat;
+    transform: rotate(90deg);
+    width: 7px;
+    height: 15px;
+    left: 10px;
+    top: 3px;
+}
+.detail__size_ob::before{
+    background: url('/bitrix/templates/eshop_bootstrap_yellow/img/detail-arrow.png') no-repeat;
+    transform: rotate(45deg);
+    width: 7px;
+    height: 15px;
+    left: 10px;
+    top: 3px;
+}
+.detail__size_weight::before{
+    background: url('/bitrix/templates/eshop_bootstrap_yellow/img/flash.png') no-repeat;
+    left: 10px;
+    top: 3px;
+    width: 10px;
+    height: 17px;
+}
+
+
+
+/* табы */
+.tabs_block {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+.tabs_block:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+.tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #e8e8e8;
+    transition: all 0.2s linear;
+}
+.tabs li {
+    font-size: 18px;
+    font-family: 'FuturaDemiC';
+    color: #545454;
+    text-align:center;
+    padding:27px 20px;
+    margin: 0 20px;
+    border-bottom: 4px solid transparent;
+    cursor:pointer;
+    -webkit-transition:all .2s linear 0s;
+    -webkit-transition-delay:.2s 0s;
+    transition:all .2s linear 0s;
+}
+.tabs li.active {
+    color:#fecd6c;
+    border-bottom: 4px solid #fecd6c;
+}
+.box {
+    background:#fff;
+    width:100%;
+    padding:90px 120px 110px 120px;
+    display:none;
+    text-align: left;
+}
+.box p {
+    margin-bottom: 15px;
+}
+.visible, .open_tab {
+    display: block;
+}
+
+.accordion{
+    color: #191919;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-family: 'FuturaDemiC';
+    transition: all 0.4s linear;
+    position: relative;
+}
+.compare_property{
+    display: inline-block;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    background: #fff;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 1.2rem;
+    width: 24rem;
+}
+.compare_property__name{
+    font-size: 18px;
+    font-family: 'FuturaBook';
+    color: #a5a5a5;
+    margin: 0 0 5px 0;
+}
+.compare_property__value{
+    font-size: 18px;
+    font-family: 'FuturaBook';
+    color: #191919;
+}
+
+
+.box-grid{
+    width: 87%;
+    margin: 0 auto;
+    grid-template-columns: 69% 31%;
+}
+.description__left{
+    padding-right: 50px;
+}
+.description__title{
+    font-size: 28px;
+    font-family: 'FuturaMedium';
+    color: #1d1d1d;
+    width: 87%;
+    margin: 0 auto;
+    margin-bottom: 33px;
+}
+.description__text{
+    font-size: 18px;
+    font-family: 'FuturaBook';
+    color: #353535;
+    line-height: 28px;
+}
+
+.description__right{
+
+}
+.description__line{
+    display: flex;
+    margin-bottom: 28px;
+}
+.description__line_name{
+    font-size: 20px;
+    font-family: 'FuturaBook';
+    color: #a5a5a5;
+    width: 40%;
+}
+.description__line_value{
+    font-size: 20px;
+    font-family: 'FuturaBook';
+    color: #191919;
+    width: 60%;
+}
+
+.detail-similar{
+    background: #fafbfc;
+    margin-top: 0;
+    padding-top: 76px;
+}
+.detail-similar .product-box{
+    background: #fff;
+}
+
+
+/* Комментарии */
+.comments{
+
+}
+.comment-box{
+    width: 60%;
+    margin-top: 60px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.comment-box:first-child{
+    margin-top: 0;
+}
+.comment-box__top{
+    display: flex;
+}
+.comment-box__name{
+    font-size: 18px;
+    font-family: 'FuturaHeavy';
+    color: #191919;
+}
+.comment-box__stars{
+    margin-right: auto;
+}
+.comment-box__date{
+    font-size: 14px;
+    font-family: 'FuturaBook';
+    color: #c9c9c9;
+}
+.comment-box__text{
+    font-size: 16px;
+    font-family: 'FuturaLight';
+    color: #191919;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.tabs_block__hidden-arrow{
+    position: relative;
+    display: none;
+}
+.tabs_block__hidden-left{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    padding: 20px;
+    z-index: 11;
+    cursor: pointer;
+    border: 2px solid #e8e8e8;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: url(/bitrix/templates/eshop_bootstrap_yellow/img/arrowleft.png) no-repeat center center #fff;
+}
+.tabs_block__hidden-right{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 20px;
+    z-index: 11;
+    cursor: pointer;
+    border: 2px solid #e8e8e8;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: url(/bitrix/templates/eshop_bootstrap_yellow/img/arrowleft.png) no-repeat center center #fff;
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1650px) {
+    .detail-left__slider {
+        width: 450px;
+    }
+
+    .detail__size_box{
+        font-size: 18px;
+        padding-left: 32px;
+    }
+
+    .detail-right__do{
+        width: 100%;
+        padding-right: 50px;
+    }
+    .detail-right__add{
+        padding: 13px 15px 13px 45px;
+    }
+    .detail-right__bottom{
+        padding-right: 50px;
+    }
+    .detail-right__bottom_grid{
+        width: 100%;
+        grid-column-gap: 30px;
+    }
+
+    .description__title{
+        width: 100%;
+    }
+    .box-grid {
+        width: 100%;
+    }
+    .box{
+        padding: 90px 120px 110px 120px;
+    }
+    .comment-box{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .detail-right__price{
+        font-size: 34px;
+    }
+    .detail-left {
+        flex-direction: column-reverse;
+    }
+    .detail-left__slider {
+        width: 490px;
+        margin-bottom: 0;
+    }
+    .detail-left__hash{
+        margin-bottom: 50px;
+    }
+    .detail-left__hash {
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .detail__size_box {
+        padding-right: 12px;
+    }
+    .detail-right__top{
+        padding-left: 25px;
+    }
+    .detail-right__do,
+    .detail-right__bottom{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .box{
+        padding: 50px;
+    }
+
+    .detail-right__bottom_grid{
+        grid-template-columns: 100%;
+    }
+}
+@media screen and (max-width: 991px){
+    .tabs_block__hidden-arrow{
+        display: block;
+    }
+    .detail-grid{
+        grid-template-columns: 100%;
+    }
+    .detail-left__slider {
+        width: 100%;
+    }
+    .detail .detail-left__slider .detail-left__slider-img{
+        width: 550px;
+        margin: 0 auto;
+    }
+
+
+
+    .detail-right__bottom_line{
+        margin-bottom: 10px;
+    }
+    .detail__size_box{
+        padding-left: 40px;
+    }
+    .tabs_block{
+
+    }
+    .tabs_block__hidden{
+        overflow-x: scroll;
+    }
+    .tabs_block .tabs{
+        width: 980px;
+        margin: 0 auto;
+    }
+
+
+    .other-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .categories-box{
+        margin-bottom: 15px;
+    }
+
+    .box-grid{
+        grid-template-columns: 100%;
+    }
+    .description__left{
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 767px){
+    .detail-left{
+        flex-direction: column-reverse;
+    }
+    .detail-left__hash {
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .detail__size,
+    .detail__add{
+        margin-top: 25px;
+    }
+    .detail .detail-left__slider .detail-left__slider-img{
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .detail-right__bottom{
+        padding-top: 20px;
+    }
+
+
+}
+@media screen and (max-width: 670px){
+    .detail-right__top{
+        flex-direction: column;
+    }
+    .detail-right__name{
+        width: 100%;
+    }
+    .detail-right__old{
+        text-align: center;
+    }
+    .detail-right__price{
+        margin-bottom: 15px;
+    }
+    .detail-right__grid{
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    .detail-right__do_left{
+        margin-bottom: 20px;
+    }
+    .detail-right__add {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .detail-right__bottom_grid{
+        grid-template-columns: 100%;
+    }
+
+    input.detail-right__add {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 575px){
+    .detail-left__hash{
+        flex-wrap: wrap;
+    }
+
+    .detail__size_box{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    .description__line_name,
+    .description__line_value{
+        font-size: 18px;
+    }
+    .box{
+        padding:30px 20px;
+    }
+
+    .other-grid {
+        grid-template-columns: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+    .detail > .container{
+        padding: 0;
+    }
+    .detail .detail-left__slider .detail-left__slider-img{
+        width: 100%;
+    }
+
+    .detail-right__name {
+        font-size: 27px;
+    }
+    .detail-right__add {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 440px){
+    .detail .detail-left__slider .detail-left__slider-img{
+       padding: 0;
+    }
+
+    .detail__add{
+        justify-content: space-between;
+    }
+    .detail_favorite{
+        margin-bottom: 25px;
+    }
+    .detail_compare{
+        margin-left: 0;
+    }
+
+
+    .detail__size_box{
+        padding-right: 0;
+        padding-left: 20px;
+    }
+    .detail__size_height::before,
+    .detail__size_ob::before,
+    .detail__size_weight::before{
+        left: 6px;
+    }
+
+
+    .tabs_block .tabs{
+        width: 870px;
+    }
+
+}
+@media screen and (max-width: 380px){
+    .detail .detail_compare{
+        margin: 0 0 0 25px !important;
+    }
+    .information-news_box-title {
+        font-size: 16px;
+    }
+}

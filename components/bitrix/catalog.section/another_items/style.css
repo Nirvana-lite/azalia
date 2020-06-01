@@ -1,0 +1,33 @@
+
+.product-box_basket_small{
+     display: inline-block;
+     width: 50px;
+     height: 50px;
+     background: #fecd6c;
+     border-radius: 50%;
+     position: relative;
+     border: none;
+     transition: background .2s linear;
+ }
+.product-box_basket_small:before{
+    position: absolute;
+    content: '';
+    background: url('/local/templates/vamsvet/img/shopping-cart.png') no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 22px;
+    left: calc(50% - 12px);
+    top: calc(50% - 11px);
+}
+.product-box_basket_small.active{
+    background: #353535;
+}
+.product-box_basket_small.active:before{
+    position: absolute;
+    content: '';
+    background: url('/local/templates/vamsvet/img/shopping-cart_sale.png') no-repeat;
+}
+.product-box_basket_small:hover{
+    background: #e6ad3c;
+}
+
